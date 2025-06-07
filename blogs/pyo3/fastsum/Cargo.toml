@@ -1,0 +1,15 @@
+[package]
+name = "fastsum"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "fastsum"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "fastsum_bin"
+path = "src/main.rs"
+
+[dependencies]
+pyo3 = { version = "0.20.0", features = ["extension-module"] }
